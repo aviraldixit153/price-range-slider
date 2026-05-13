@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(135, 152, 143);
+    padding-top:10%;
+}
+.container{
+    width: 550px;
+    margin: auto;
+}
+#one,#two{
+    text-align:center;
+    font-size: 50px;
+    color: rgb(47, 6, 136);
+    margin:10px;
+}
+#two{
+    margin-bottom: 40px;
+}
+#d1,#d2{
+    padding-left: 30px;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    width:400px;
+    margin:auto;
+}
+#d1 label,#d2 label{
+    width:140px;
+}
+#r1{
+    width:200px;
+    height:20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(198, 196, 196);
+}
+#r2{
+    width:200px;
+    height:20px;
+    border-radius: 5px;
+    background-color: rgb(198, 196, 196);
+}
+.r3{
+    width:370px;
+    height:5px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(198, 196, 196);
+    margin: 20px 90px;
+}
+.r3 input[type="range"]{
+    position: absolute;
+    width: calc(100% + 10px);
+    left: -5px;
+    top:50%;
+    transform: translateY(-50%);
+
+    pointer-events: none;
+    appearance: none;
+    background: none;
+    z-index:2;
+}
+.r3 input[type="range"]::-webkit-slider-runnable-track{
+    height: 5px;
+    background: transparent;
+    border-radius: 5px;
+}
+.r3 input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    pointer-events: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background: #555;
+
+    cursor: pointer;
+    margin-top: -8px;
+}
+.progress{
+    position: absolute;
+    height: 5px;
+    background: green;
+    border-radius: 5px;
+    left: 25%;
+    right: 25%;
+}
+

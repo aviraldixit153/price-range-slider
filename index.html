@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h4 id="one">ShoppingMart</h4>
+        <h3 id="two">Price Range Slider</h3>
+        <div id="d1">
+            <label><b>Minimum Price</b></label>
+            <span>₹</span>
+            <input type="text" id="r1">
+        </div>
+        <div id="d2">
+            <label><b>Maximum Price</b></label>
+            <span>₹</span>
+            <input type="text" id="r2">
+        </div>
+        <div class="r3">
+            <div class="progress"></div>
+            <input type="range" id="minSlider" min="0" max="10000" value="2500">
+            <input type="range" id="maxSlider" min="0" max="10000" value="7500">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
